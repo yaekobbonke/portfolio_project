@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} WSAC {% endblock %}
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <section id="header1">
+        <div class=logo>
+        <a href="/">WSAC.COM</a>
+        </div>
+        <ul id="navbar1">
+            <li><a href="/library">Library</a></li>
+            <li><a href="/registrar">Registrar</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/portal">Portal</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </section>     
+    <section id="header2">
+        <ul id="navbar2">
+            <i class="fa-solid fa-house"></i>
+            <li><a href="#">WSAC</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul class="drop_down">
+                    <li><a href="#">About WSAC</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Vision</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Academics</i></a>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul class="drop_down">
+                    <li><a href="#">Departments</a></li>
+                    <li><a href="#">All Programs</a></li>
+                    <li><a href="#">Academic Staffs</a></li>
+                    <li><a href="#">Academic Calendar</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Research</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul class="drop_down">
+                    <li><a>social research</a></li>
+                    <li><a>Livestoch Research</a></li>
+                    <li><a>soil research</a></li>
+                    <li><a>Crop research</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Community Service</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul class="drop_down">
+                    <li><a href="#">Outreach programs</a></li>
+                    <li><a href="#">Technology Transfer</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Departments</i></a><i class="fa-solid fa-caret-down"></i>
+                <ul class="drop_down">
+                    <li><a href="/animal_science">Animal production</a></li>
+                    <li><a href="/crop_science">Crop Production</a></li>
+                    <li><a href="/natural_resource">Natural Resource Management</a></li>
+                    <li><a href="#">Irrigation</a></li>
+                    <li><a href="#">Cooperative and accounting</a></li>
+                    <li><a href="/animal_health">Animal Health</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Administration</a><i class="fa-solid fa-caret-down"></i>
+                <ul class="drop_down">
+                    <li><a href="#">Dean Office</a></li>
+                    <li><a href="#">Vice Deans</a></li>
+                    <li><a href="#">Student Dean</a></li>
+                    <li><a href="#">COC Office</a></li>
+                    <li><a href="#">CEP Office</a></li>
+                    <li><a href="#">General service Center</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Student</a>
+                <i class="fa-solid fa-caret-down"></i>
+                <ul class="drop_down">
+                    <li><a>student union</a></li>
+                    <li><a>student life</a></li>
+                    <li><a>student clubs</a></li>
+                    <li><a>student council</a></li>
+                </ul>
+            </li>
+            <li><a>News</a><i class="fa-solid fa-caret-down"></i>
+                <ul class="drop_down">
+                    <li><a href="/announcement">Announcements</a></li>                    
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/vacancy">Vacancies</a></li>
+                </ul>
+            </li>
+           
+        </ul>
+    </section>
+    <!--Home-->
+
+    <section id="home">
+    
+        <h2>{{ message }}</h2>
+        <p> We are working to improve agricultural productivity in our country </p>
+  
+        <div class="btn">
+            <a href="/about" class="blue">Learn More</a>
+            <a href="/login" class="yellow">Visit Courses</a>
+        </div>
+    </section>
+    <!---Features-->
+    <section id="features">
+        <h1>Farm projects</h1>
+        <p>We have projcts that are focusing on technological intervention</p>
+        <div class="fea_base">
+            <div class="fea-box"><i class="fa-duotone fa-cow"></i>
+            <h3>Crop products</h3>
+            <p>Our main products of crop include creals, vegetables and fruits</p>
+            </div>
+            <div class="fea-box"><i class="fa-duotone fa-cow"></i>
+                <h3>Livestock products</h3>
+                <p>Our main products of crop include creals, vegetables and fruits</p>
+                </div>
+                <div class="fea-box"><i class="fa-duotone fa-cow"></i>
+                    <h3>Mushroom production</h3>
+                    <p>Our main products of crop include creals, vegetables and fruits</p>
+                    </div>
+        </div>
+    </section>
+    <!--courses-->
+    <section id="course">
+        <div class="box_course">
+        <h1>Our popular Short term trainings</h1>
+        <p>We are deigning and providing different short term trainings in our college</p>
+        <div class="course-box">
+            <div class="courses">
+                <img src="/images/p9.jpg">
+                <div class="details">
+                <span>Updated on 21/04/2023</span>
+                <h6>vertical Farming</h6>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(200)</span>
+                </div>
+                <div class="cost">
+                    2000birr
+                </div>
+            </div>
+            </div>
+            <div class="courses">
+                <img src="../images/p12.jpg">
+                <span>Updated on 21/04/2023</span>
+                <h6>vegetable farming</h6>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(200)</span>
+                
+                </div>
+                <div class="cost">
+                    1500 birr
+                </div>
+            </div>
+            <div class="courses">
+                <img src="../images/p7.jpg">
+                <div class="details"></div>
+                <span>Updated on 21/04/2023</span>
+                <h6>Poultry Farming</h6>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(200)</span>
+                </div>
+                <div class="cost">
+                    2000birr
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--Registration-->
+    <section id="registration">
+        <div class="remainder">
+            <p>Get online courses </p>
+            <h1>Register to Get it</h1>
+            <div class="time">
+                <div class="date">
+                    18 <br> Days
+                </div>
+                <div class="date">
+                    23 <br> Hours
+                </div>
+                <div class="date">
+                    06 <br> Minutes
+                </div>
+                <div class="date">
+                    58 <br> Seconds
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h3>Create Free Account Now</h3>
+            <input type="text" placeholder="Name" id="">
+            <input type="text" placeholder="E-mail" id="">
+            <input type="text" placeholder="Phone number" id="">
+            <div class="btn">
+                <a href="#" class="yellow">Submit Form</a>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Profiles-->
+    <section id="experts">
+        <h1>Senior Experts</h1>
+        <P>Our college has a number of Instructors in differents departments who served for more than 10 years.</P>
+        <div class="expert-box">
+            <div class="profile">
+                <img src="../static/images/exp1.jpg"> 
+                <h6>Yaekob Bonke</h6>
+                <p>Animal Production expert</p>
+                <div class="pro-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="../static/images/exp4.jpg"> 
+                <h6>Serkalem Abreham</h6>
+                <p>Animal Breeding expert</p>
+                <div class="pro-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="../static/images/exp2.jpg"> 
+                <h6>Abigiya Yaekob</h6>
+                <p>Animal Nutrition expert</p>
+                <div class="pro-links">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+    <!--Footer-->
+    <footer>
+    <div class="footer-col">
+        <h3>About</h3>
+        <li>Vision</li>
+        <li>Mission</li>
+        <li>Manage websites</li>
+        <li>Service</li>
+    </div>
+   
+    <div class="footer-col">
+        <h3>Administration</h3>
+        <li>Dean Office</li>
+        <li>Student Service</li>
+        <li>Finance</li>
+        <li>Human resource Management</li>
+    </div>
+    <div class="footer-col">
+        <h3>Departments</h3>
+        <li>Animal Science</li>
+        <li>Crop productiob</li>
+        <li>Natural Resource Management</li>
+        <li>Irrigation</li>
+    </div>
+    <div class="footer-col">
+        <h3>NewsLetter</h3>
+        <p>You can Trust Us. We only send promo offers</p>
+        <div class="subscribe">
+        <input type="text" placeholder="Your Email Address">
+        <a href="#" class="yellow">Subscribe</a>
+        </div>
+    </div>
+    </footer>
+    
+    <div class="copyright">
+        <p>Copyright @2024, Wolaita Sodo Agricultural college</p>
+    </div>
+</body>
+</html>

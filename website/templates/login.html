@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+    <title>Login</title>
+</head>
+<body>
+<section>
+    <div id="log">
+        <a href="/" class="logo">wsac.com</a>
+    </div>
+</section>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="flashes">
+            {% for message in messages %}
+                <li> {{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+
+<h1>Login</h1>
+<form method="POST" action="/login" id="form">
+    <label for="email_or_phone">Email or Phone Number:</label>
+    <input type="text" id="email_or_phone" name="email_or_phone" placeholder="Enter Email address" required><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter password" required><br>
+    <div class="remember"> 
+        <label>Remember Me:</label>
+        <input type="checkbox" class="checkbox" name="remember_password"><br>
+    </div> 
+    <input type="submit" value="Login">
+    <a href="/reset-password_request">Forgot Password?</a>
+    <p>New to our website? <a href="/register">Create an account</a></p>
+</form>
+</body>
+</html>

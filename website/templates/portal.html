@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/portal.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <div id="navbar">
+            <a href="/" class='logo-box'>wsac.com</a>
+        <ul>
+            <li><a href="/portal">Home</a></li>
+            <li><a href="/programs">All Programs</a></li>
+            <li><a href="/fees">Fees</a></li>
+            <li><a href="/profile">profile</a></li>
+            
+        </ul>
+    </div>
+   <section id='course-box'>
+    <h1>Welcome to the Portal</h1>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class="flashes">
+            {% for message in messages %}
+                <li> {{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+    <div id='course'>
+    <div class='course-id'>
+    <h2>Dairy Farming</h2>
+    <p>Dairy is one of top required trainings</p>
+    <h3>2000birr</h3>
+    <ul>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+    </ul>
+    <a href="{{url_for('course_bp.start_learning', course_id='dairy_farming') }}" class='learn'>Start learning</a>
+</div>
+<div class='course-id'>
+    <h2>Poultry Farming</h2>
+    <p>Poultry is one of top required trainings</p>
+    <h3>2000birr</h3>
+    <ul>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+    </ul>
+    <a href="{{ url_for('course_bp.start_learning', course_id='poultry_farming') }}" class="learn">Start learning</a>
+</div>
+<div class='course-id'>
+    <h2>Queen Rearing Farming</h2>
+    <p>Dairy is one of top required trainings</p>
+    <h3>2000birr</h3>
+    <ul>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+    </ul>
+    <a href="{{ url_for('course_bp.start_learning', course_id='queen_rearing') }}" class="learn">Start learning</a>
+</div>
+<div class='course-id'>
+    <h2>Fish Farming</h2>
+    <p>Dairy is one of top required trainings</p>
+    <h3>2000birr</h3>
+    <ul>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+    </ul>
+    <a href="{{url_for('course_bp.start_learning', course_id='crop')}}" class="learn">Start learning</a>
+</div>
+<div class='course-id'>
+    <h2>Crop Farming</h2>
+    <p>Dairy is one of top required trainings</p>
+    <h3>2000birr</h3>
+    <ul>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+    </ul>
+    <a href="{{url_for('course_bp.start_learning', course_id='crop')}}" class="learn">Start learning</a>
+</div>
+<div class='course-id'>
+    <h2>Horticultural crop farming</h2>
+    <p>Horticulture is one of top required trainings</p>
+    <h3>2000birr</h3>
+    <ul>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+    </ul>
+    <a href="{{url_for('course_bp.start_learning', course_id='natural')}}" class="learn">Start learning</a>
+</div>
+<div class='course-id'>
+    <h2>Natural Resource conservation</h2>
+    <p>Dairy is one of top required trainings</p>
+    <h3>2000birr</h3>
+    <ul>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+        <li><a><i class="fa-sharp fa-solid fa-star"></i></a></li>
+    </ul>
+   <a href="{{url_for('course_bp.start_learning', course_id='natural_resource')}}" class='learn'></a>
+   </section>
+</div>
+
+</div>
+   <a href="/logout" class='logout'>Logout</a>
+</body>
+</html>

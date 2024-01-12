@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h1>User Dashboard</h1>
+    <h2>Welcome, {{ current_user.username }}</h2>
+    {% if selected_course_id %}
+        <h3>Selected Course:</h3>
+        <p>ID: {{ selected_course_id }}</p>
+        <p>Name: {{ selected_course_name }}</p>
+    {% else %}
+        <p>No course selected.</p>
+    {% endif %}
+</body>
+</html>
