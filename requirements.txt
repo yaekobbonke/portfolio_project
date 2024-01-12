@@ -6,8 +6,3 @@ pip3 install flask_migrate
 pip3 install flask_mail
 pip3 install itsdangerous
 pip3 install redis
-
-
-
-
-
