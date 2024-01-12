@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#lib {
+    background-color: #f2f2f2;
+    padding: 10px;
+    position: sticky;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.logo {
+    display: flex; 
+    align-items: center; 
+    margin-left: 50px;
+}
+.logo a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background-color: #067919;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 20px; 
+}
+ul li {
+    margin-right: 70px;
+}
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 25px;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+ul li a:hover {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+#lib-home {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 50px;
+}
+#lib-home h2 {
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 400;  
+}
+#lib-home p{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+#lib-home a{
+    padding: 10px;
+    background-color: lightblue;
+    color: black;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    transition: 0.5s ease;
+}
+#lib-home a:hover{
+    background-color: yellowgreen;
+    color: whitesmoke;
+} 

@@ -1,0 +1,86 @@
+h1 {
+    text-align: center;
+  }
+  #log {
+    background-color: rgb(29, 131, 161);
+    padding: 5px;
+  }
+  #log a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10%;
+    transition: 0.3s ease;
+  }
+  #log a:hover{
+    color:rgb(163, 23, 133);
+  }
+  .flashes {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+.flashes li {
+    margin-bottom: 5px;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+  form {
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 50px 80px 30px 80px;
+    margin-top: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+  }
+  .remember {
+    margin-bottom: 10px;
+    display: flex;
+      }
+ .checkbox {
+    margin-right: 5px;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  a {
+    color: #337ab7;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 20px;
+  }

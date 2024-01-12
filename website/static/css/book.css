@@ -1,0 +1,28 @@
+/* CSS for Book Details */
+
+/* Reset default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Heading styles */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles */
+p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+}

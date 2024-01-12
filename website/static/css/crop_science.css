@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#crop_science{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    background-color: lightgreen;
+}
+#crop_science .logo_crop_science{
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    text-decoration: none;
+    color: #fff;
+}
+#crop_science ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+#crop_science ul li{
+    margin-right: 40px;
+    justify-content: flex-end;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#crop_science ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px;
+    transition: 0.3s ease;
+    color: #fff;
+    
+}
+#crop_science ul li a:hover{
+    background-color: #fff;
+    color: black;
+}
+#home{
+    background-image: url(../images/p9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 86vh;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#home h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+#home p{
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #fff;
+}
+#home a{
+    background-color: rgb(31, 103, 161);
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: #fff;
+    border-radius: 10px;
+}
+#home a:hover{
+    background-color: rgb(131, 90, 150);
+    color: #fff
+}
